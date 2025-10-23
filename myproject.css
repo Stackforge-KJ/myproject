@@ -1,0 +1,657 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.tp-nv2{
+    display: none;
+}
+
+header{
+    background-color: #FAF9FB;
+    position: fixed;
+    width: 100%;
+    padding: 30px 0px;
+    top: 0;
+}
+
+.tp-nv{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid red; */
+   
+}
+
+
+.head-left img{
+    width: 150px;
+
+}
+
+
+.head-center ul{
+    display: flex;
+    gap: 1.6em;
+    font-size: 15px;
+    color: black;
+    /* font-family: arial, sans-serif; */
+    /* line-height: 22.4px; */
+}
+
+.head-right{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.loginn{
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    }
+
+    .loginn:hover{
+        color: purple;
+    }
+
+
+    .head-right button{
+        padding: 20px 35px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+    .fa-solid{
+        display: none;
+    }
+
+    @media(max-width:991px){
+       .tp-nv{
+        display: none;
+       }
+        .tp-nv2{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: auto; */
+        /* padding: 15px 0px; */
+       }
+
+       .logo2 img{
+        width: 50px;
+
+       }
+
+       .nv2-left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+       }
+
+       .nv2-left button{
+            padding: 7px 10px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+       }
+    }
+
+    /* ===================Hero Section=========================== */
+   body{
+    padding-top: 115px;
+    background-color: #FAF9FB;
+   }
+   #hero{
+    background-color: #2A222B;
+    padding: 0px 40px 60px 40px;
+   }
+   
+
+   .hero-sect{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+   }
+   
+   
+    .hero-top{
+    width: 95%;
+    margin: auto;
+    max-width: 1440px;
+    height: fit-content;
+    max-height: 361;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* background-color:blue; */
+   }
+
+.hero-top-inner{
+    width: 60%;
+    height: fit-content;
+    margin:  auto;
+    max-width: 832px;
+    /* max-height: 361px; */
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    gap: 0.5rem;
+    padding: 0px 50px;
+    
+}
+
+.hero-p1{
+    color: #ddb7f0;
+    font-size: 14px;
+    font-family: "Twklausanne 600" Arial, sans-serif;
+    max-width: 193px;
+    max-height: 16.8;
+
+}
+
+
+.hero-p2{
+    color: white;
+    font-size: 20px;
+    font-family: "Twklausanne 600" Arial, sans-serif;
+    max-width: 608px;
+    max-height: 52px;
+}
+
+.hero-top h1{
+    color: #FFFFFF;
+    font-size: 70px;
+    max-width: 832px;
+    max-height: 160px;
+    font-family: Tobias, 'Times New Roman', Times, serif;
+}
+
+
+.hero-top button{
+    background-color: #fff;
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: black;
+    max-width: 160px;
+    max-height: 48px;
+}
+
+
+   .hero-down{
+     /* background-color:red; */
+    width: 95%;
+    max-width:1440px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid crimson; */
+   }
+
+   .hero-down video{
+    width: 100%;
+    max-width:1440px ;
+   }
+    /* ================products======================= */
+
+.first-side img{
+    width: 75px;
+    height: 20px;
+    /* padding: 15px 30px; */
+    /* background-color:red; */
+}
+
+.first-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 35px 0px;
+    background-color:#FAF9FB;
+}
+
+.prod{
+    /* border: 2px solid black; */
+    padding: 16px;
+    border-radius: 10px;
+    background-color:#FFFFFF;
+}
+
+
+.mve-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.mve-top h2{
+    font-size: 45px;
+    /* max-width: 842px;
+    max-height: 140px;
+    text-align: center; */
+}
+
+/* =========================Customer-section======================= */
+
+
+.topp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+
+
+.downn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1440px;
+    height: auto;
+    max-height: 581.34;
+    margin:auto ;
+    gap: 1em;
+    /* background-color:navajowhite; */
+    
+}
+
+
+.downn-right{
+    /* background-color:brown; */
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.downn-left{
+    max-width: 459px;
+    /* max-height: 329px; */
+    width: Auto;
+    /* background-color:chartreuse; */
+     height: auto;
+
+}
+
+
+
+.downn-right video{
+    width: 100%;
+    object-fit: cover;
+    max-width: 582px;
+    /* height: auto; */
+    margin: auto;
+    min-width: 300px;
+}
+
+
+.topp h2{
+    font-size:5em ;
+    max-width: 832px;
+    max-height: 140px;
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.typ-frm{
+    font-size: 1.2em;
+    color: purple;
+    text-decoration: underline;
+}
+
+.downn-left h3{
+        font-size: 2.4em;
+}
+
+.typ-frm2{
+    font-size: 1.4em;
+}
+
+
+.downn-left button {
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#cust-sect{
+    margin-bottom: 40px;
+}
+
+@media(max-width:991px){
+    .downn{
+        flex-direction: column;
+
+    }
+
+    .downn-left{
+        width: 80%;
+
+    }
+
+    .downn-right{
+        width: 90%;
+
+    }
+
+    .downn-right video{
+        width: 90%;
+        
+        min-width: 90vw;
+        max-width: 90%;
+    }
+}
+
+
+/* =====================Custom-IQ==================== */
+.cuss-iq{
+    margin-bottom: 50px;
+}
+.cus-iq{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1440px;
+    height: auto;
+    max-height: 581.34;
+    margin:auto ;
+    gap: 1em;
+    /* background-color: red; */
+}
+
+.cus-left{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* background-color: darkorange; */
+    align-items: center;
+}
+
+ .cus-left video{
+    width: 100%;
+    object-fit: cover;
+    max-width: 582px;
+    height: auto;
+    margin: auto;
+    min-width: 300px;
+}
+
+
+
+.cus-right{
+     max-width: 459px;
+    /* max-height: 382px; */
+    width: 45%;
+    /* background-color:orchid; */
+     height: auto;
+
+}
+
+
+
+.cuss-p1{
+    font-size: 1.2em;
+    color: purple;
+    text-decoration: underline;
+}
+
+.cus-right h3{
+        font-size: 2.4em;
+}
+
+.cuss-p2{
+    font-size: 1.4em;
+}
+
+
+.cus-right button {
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+@media(max-width:991px){
+    .cus-iq{
+        flex-direction: column-reverse;
+
+    }
+
+    .cus-right{
+        width: 80%;
+
+    }
+
+    .cus-left{
+        width: 90%;
+
+    }
+
+    .cus-left video{
+        width: 90%;
+        min-width: 90vw;
+        max-width: 90%;
+    }
+}
+
+/* ====================marrq-section==================== */
+.marqu-sect{
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
+.wrapper{
+    width: 94%;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 70px;
+    margin: auto;
+    padding: 70px 0px;
+}
+
+.marrq-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    max-width: 832px;
+
+}
+
+.marrq-top p{
+    font-size:14px ;
+    color: #9454AB;
+}
+
+.marrq-top h3{
+    font-size: 48px;
+    line-height: 52px;
+    max-height: 158px;
+    text-align: center;
+    /* margin: auto; */
+
+}
+
+
+.marrq-one{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.marrq-two{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.upper-marrq{
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 15px 80px;
+    background-color:royalblue;
+}
+
+.marrq-down{
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 15px 80px;
+    background-color:royalblue;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+.btn button{
+    padding: 20px 40px;
+    background-color: fuchsia;
+}
+
+/* ===================why-section===================== */
+.why-sect-typfrm{
+    margin-bottom: 50px;
+}
+
+.why-typ{
+    width: 60%;
+    background-color:chocolate;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: auto;
+    height: auto;
+}
+
+.why-center{
+    border: 2px solid mediumaquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+
+}
+
+.why-percentt{
+    border: 2px solid fuchsia;
+    max-width:235px ;
+    max-height: 136px;
+    
+}
+
+.why-top{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin: auto;
+    max-width: 452px;
+    max-height: 115px;
+    border: 2px solid dodgerblue;
+    
+}
+
+.why-top h2{
+    font-size: 64px;
+    max-width: 452px;
+}
+
+.why-top p{
+    font-size: 20px;
+    max-width: 447;
+}
+
+.why-percentt h3{
+    /* font-size:52px; */
+    max-width:143px;
+    max-height:72px;
+}
+
+/* ====================footer======================= */
+
+footer{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.foot-wrapper{
+    /* background-color: darkblue; */
+    width: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    padding: 0px 30px 50px 30px;
+
+}
+
+.prod-roww{
+
+}
+
+.temp-roww{
+
+}
+
+
+.inte-roww{
+
+}
+
+.resource-roww{
+
+}
+
+.gtku-roww{
+
+}
+
+.socials-handle{
+
+}
+
+.menu li{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footr h5{
+    font-size: 20px;
+    color: white;
+}
+
+.footr-down{
+    color: white;
+     padding: 30px;
+     border-top: 2px solid white;
+}
