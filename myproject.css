@@ -1,6 +1,6 @@
 *{
-    border: 0px;
-    padding: 0px;
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
@@ -14,12 +14,12 @@ header{
     background-color: #FAF9FB;
     position: fixed;
     width: 100%;
-    padding: 30px 0px;
+    padding: 10px 0px;
     top: 0;
 }
 
 .tp-nv{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,14 +35,15 @@ header{
 }
 
 
-.head-center ul{
+.head-center .menu{
     display: flex;
     gap: 1.6em;
-    font-size: 15px;
-    color: black;
+    
     /* font-family: arial, sans-serif; */
     /* line-height: 22.4px; */
 }
+
+
 
 .head-right{
     display: flex;
@@ -69,7 +70,97 @@ header{
     }
     .fa-solid{
         display: none;
+        color: black;
     }
+    .menu li a{
+        font-size: 15px;
+        color: black;
+    }
+    
+    .menu{
+
+    }
+
+    .menu-drop{
+        position: relative;
+    }
+
+    .dropdown{
+    position: absolute;
+    /* z-index: 2; */
+    display: none;
+    /* width: 900px; */
+    /* border: 2px solid red; */
+    border: none;
+    background-color: white;
+    /* border-radius: 10px; */
+        
+   
+    }
+
+    .menu-drop:hover .dropdown{
+    display: block;
+}
+
+.drop-child{
+    border-right: 2px solid #464242;
+    padding: 30px 50px 0px 35px;
+}
+.drp-three{
+    border: none;
+}
+
+.drop-child li{
+    color: black;
+    font-size:1.2em ;
+    font-weight:600 ;
+    /* line-height: 26px; */
+    padding-right: 4em;
+
+}
+
+.drop-child p{
+    font-size: .7em;
+    font-weight: 200;
+    width: 16em;
+    margin-bottom: 2em;
+
+}
+
+
+
+    .child-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px 0px 10px;
+       
+    }
+
+
+    .child-wrap ul li{
+        color: black;
+        text-align:left;
+    }
+
+    /* .menu-drop a{
+        margin-bottom: 30px;
+    } */
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @media(max-width:991px){
        .tp-nv{
@@ -77,11 +168,10 @@ header{
        }
         .tp-nv2{
         display: flex;
-        width: 90%;
+        width: 80%;
         justify-content: space-between;
         align-items: center;
-        /* margin: auto; */
-        /* padding: 15px 0px; */
+       
        }
 
        .logo2 img{
@@ -106,12 +196,15 @@ header{
 
     /* ===================Hero Section=========================== */
    body{
-    padding-top: 115px;
+    padding-top: 80px;
     background-color: #FAF9FB;
+    outline: 5px solid red;
    }
    #hero{
     background-color: #2A222B;
-    padding: 0px 40px 60px 40px;
+    padding: 50px 40px 60px 40px;
+    margin-bottom: 60px;
+    overflow: hidden;
    }
    
 
@@ -138,26 +231,23 @@ header{
 
 .hero-top-inner{
     width: 60%;
-    height: fit-content;
+    /* height: fit-content; */
     margin:  auto;
-    max-width: 832px;
-    /* max-height: 361px; */
-    /* background-color: antiquewhite; */
+    /* max-width: 832px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     gap: 0.5rem;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     
 }
 
 .hero-p1{
     color: #ddb7f0;
-    font-size: 14px;
+    font-size: 1em;
     font-family: "Twklausanne 600" Arial, sans-serif;
-    max-width: 193px;
+    /* max-width: 193px; */
     max-height: 16.8;
 
 }
@@ -165,30 +255,40 @@ header{
 
 .hero-p2{
     color: white;
-    font-size: 20px;
+    font-size: 1.6em;
     font-family: "Twklausanne 600" Arial, sans-serif;
-    max-width: 608px;
+    /* max-width: 608px; */
     max-height: 52px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .hero-top h1{
     color: #FFFFFF;
-    font-size: 70px;
-    max-width: 832px;
+    font-size: 5em;
+    /* max-width: 832px; */
     max-height: 160px;
     font-family: Tobias, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
 }
 
 
-.hero-top button{
+.hero-top a{
     background-color: #fff;
-    padding: 10px 35px;
-    border-radius: 10px;
+    padding: 17px 40px;
+    border-radius: 15px;
     color: black;
-    max-width: 160px;
+    /* max-width: 160px; */
     max-height: 48px;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
 }
 
+.hero-top a:hover{
+    border-radius: 20px;
+}
 
    .hero-down{
      /* background-color:red; */
@@ -204,9 +304,37 @@ header{
    .hero-down video{
     width: 100%;
     max-width:1440px ;
+    margin: auto;
    }
-    /* ================products======================= */
 
+@media(max-width:1167px){
+    .hero-top-inner h1{
+        font-size:4em ;
+        padding: 0;
+    }
+}
+
+@media(max-width:991px){
+    .hero-top-inner{
+        width: 90%;
+    }
+
+    .hero-top-inner h1{
+        font-size:2.5em;
+        text-align: center;
+
+}
+}
+
+@media(max-width:592px){
+    .hero-p2{
+        font-size:1.1em ;
+    }
+}
+    /* ================products======================= */
+.move{
+    margin-bottom: 70px;
+}
 .first-side img{
     width: 75px;
     height: 20px;
@@ -218,15 +346,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 1em;
     padding: 35px 0px;
     background-color:#FAF9FB;
 }
 
 .prod{
     /* border: 2px solid black; */
-    padding: 16px;
-    border-radius: 10px;
+    padding: 30px 65px;
+    border-radius: 25px;
     background-color:#FFFFFF;
 }
 
@@ -239,14 +367,28 @@ header{
 }
 
 .mve-top h2{
-    font-size: 45px;
+    font-size: 3.2em;
+    font-weight: 400;
+
     /* max-width: 842px;
     max-height: 140px;
     text-align: center; */
 }
 
+@media(max-width:1245px){
+    .first-side{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
 /* =========================Customer-section======================= */
 
+.customer-sect{
+    margin-bottom: 70px;
+}
 
 .topp{
     display: flex;
@@ -306,26 +448,40 @@ header{
 
 
 .topp h2{
-    font-size:5em ;
+    font-family: Tobias, "Times New Roman", sans-serif;
+    font-size:4em ;
+    line-height: 70px;
+    font-weight: 400;
     max-width: 832px;
     max-height: 140px;
     text-align: center;
-    padding: 0px 25px;
+    padding: 0px 50px;
+    margin-bottom: 50px;
 }
 
 .typ-frm{
-    font-size: 1.2em;
-    color: purple;
+    font-size: .8em;
+    line-height: 16.8px;
+    color: #9454AB;
+    font-weight: 400;
     text-decoration: underline;
+    margin-bottom: 30px;
 }
 
 .downn-left h3{
-        font-size: 2.4em;
+        font-size: 3.4em;
+        font-weight: 400;
+        line-height: 53px;
+        margin-bottom: 15px;
 }
 
 .typ-frm2{
-    font-size: 1.4em;
+    font-size: 1.5em;
+    margin-bottom: 35px;
+    font-weight: 400;
+    line-height: 26px;
 }
+
 
 
 .downn-left button {
@@ -364,8 +520,9 @@ header{
 
 
 /* =====================Custom-IQ==================== */
-.cuss-iq{
+.custom-iq{
     margin-bottom: 50px;
+   padding: 70px 0px;
 }
 .cus-iq{
     display: flex;
@@ -415,14 +572,17 @@ header{
     font-size: 1.2em;
     color: purple;
     text-decoration: underline;
+    margin-bottom: 25px;
 }
 
 .cus-right h3{
         font-size: 2.4em;
+        margin-bottom: 25px;
 }
 
 .cuss-p2{
     font-size: 1.4em;
+    margin-bottom: 15px;
 }
 
 
@@ -459,8 +619,8 @@ header{
 
 /* ====================marrq-section==================== */
 .marqu-sect{
-   margin-top: 30px;
-   margin-bottom: 50px;
+   margin-top: 50px;
+   margin-bottom: 70px;
 }
 .wrapper{
     width: 94%;
@@ -482,16 +642,22 @@ header{
 }
 
 .marrq-top p{
-    font-size:14px ;
+    font-size: .8em;
+    font-weight: 400;
+    line-height: 17px;
     color: #9454AB;
+    margin-bottom: 35px;
+    
 }
 
 .marrq-top h3{
-    font-size: 48px;
+    font-size: 3.6em;
     line-height: 52px;
     max-height: 158px;
+    max-width: 750px;
+    font-weight: 400;
     text-align: center;
-    /* margin: auto; */
+    padding: 0px 50px;
 
 }
 
@@ -499,28 +665,31 @@ header{
 .marrq-one{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 40px;
+    gap: .5em;
 
 }
 
 .marrq-two{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 40px;
+    gap: .5em;
 }
 
 
 .upper-marrq{
-    border: 2px solid white;
+    border: 1px solid black;
+    padding: 27px 90px;
+    background-color: #c5b8d3;
     border-radius: 20px;
-    padding: 15px 80px;
-    background-color:royalblue;
 }
 
 .marrq-down{
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 15px 80px;
-    background-color:royalblue;
-}
+     border: 1px solid black;
+    padding: 32px 90px;
+    background-color:#c5b8d3;
+    border-radius: 20px;}
 
 
 .btn{
@@ -531,10 +700,14 @@ header{
 }
 
 .btn button{
-    padding: 20px 40px;
-    background-color: fuchsia;
+    padding: 20px 30px;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
 }
-
+.btn button:hover{
+    border-radius: 20px;
+}
 /* ===================why-section===================== */
 .why-sect-typfrm{
     margin-bottom: 50px;
@@ -542,29 +715,30 @@ header{
 
 .why-typ{
     width: 60%;
-    background-color:chocolate;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
     margin: auto;
     height: auto;
 }
 
 .why-center{
-    border: 2px solid mediumaquamarine;
+    /* border: 2px solid mediumaquamarine; */
     width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 10px;
+    margin-bottom: 40px;
 
 }
 
 .why-percentt{
-    border: 2px solid fuchsia;
+    /* border: 2px solid fuchsia; */
     max-width:235px ;
     max-height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
     
 }
 
@@ -576,13 +750,16 @@ header{
     margin: auto;
     max-width: 452px;
     max-height: 115px;
-    border: 2px solid dodgerblue;
-    
+    /* border: 2px solid dodgerblue; */
+    margin-bottom: 30px;
 }
 
 .why-top h2{
     font-size: 64px;
     max-width: 452px;
+    font-weight: 400;
+    line-height: 72px;
+    margin-bottom: 15px;
 }
 
 .why-top p{
@@ -591,17 +768,44 @@ header{
 }
 
 .why-percentt h3{
-    /* font-size:52px; */
+    font-family: Tobias, "Times New Roman", sans-serif;
+    font-size:4.5em;
     max-width:143px;
     max-height:72px;
+    font-weight: 400;
+    line-height: 72px;
 }
 
-/* ====================footer======================= */
+.why-percentt p{
+    font-size: 1.3em;
+    line-height: 26px;
+    font-weight: 400;
+    max-width: 235px;
+    padding: 0px 25px;
+    text-align: center;
+    margin: auto;
+}
+ 
+.why-btn button{
+    padding: 12px 40px;
+    background-color: #2A222B;
+    color: #fff;
+    border-radius: 10px;
+}
+.why-btn button:hover{
+    border-radius: 15px;
+}
+
+.why-btn{
+    display: flex;
+    justify-content: center;
+}
+/* ====================footer====================== */
 
 footer{
-    background-color: black;
+    background-color: #2A222B;
     margin: 0;
-    padding: 0;
+    padding-top: 35px;
 }
 .foot-wrapper{
     /* background-color: darkblue; */
@@ -651,7 +855,21 @@ footer{
 }
 
 .footr-down{
+    display: flex;
+    justify-content: space-between;
+
     color: white;
      padding: 30px;
      border-top: 2px solid white;
+}
+
+
+.footr-inner{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footr-inner a{
+    color: #fff;
 }
