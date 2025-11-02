@@ -305,7 +305,12 @@ header{
     max-width:1440px ;
     margin: auto;
    }
-
+@media(min-width:1900px){
+    .hero-top-inner{
+    width: 90%;
+    margin: auto;
+    }
+}
 @media(max-width:1167px){
     .hero-top-inner h1{
         font-size:4em ;
@@ -338,15 +343,101 @@ header{
         width: 100%;
     }
 }
+
+
+@media(max-width:379px){
+    .hero-p1{
+
+    font-size: .7em;
+    font-family: "Twklausanne 600" Arial, sans-serif;
+
+}
+.hero-top-inner h1{
+        font-size:1.8em;
+        text-align: center;
+
+}
+.hero-top-inner{
+    width: 100%;
+    margin:  auto;
+}
+.hero-p2{
+        font-size:.9em ;
+    }
+}
     /* ================products======================= */
 .move{
     margin-bottom: 70px;
 }
+
+.wrapper-sides{
+    display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+height: 9em;
+background: #9454AB;
+overflow: hidden;
+}
+
+.mve-inner{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    opacity: 0;
+}
+
+.first-side{
+    animation: showfirstside 10s infinite;
+
+}
+.first-side{
+    animation: showfirstside 10s infinite;  
+}
+.prod{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.prod:nth-child(1) {animation: fadeone 10s infinite; animation-delay :0s;}
+.prod:nth-child(2) {animation: fadeone 10s infinite; animation-delay :0.5ss;}
+.prod:nth-child(3) {animation: fadeone 10s infinite; animation-delay :1s;}
+.prod:nth-child(4) {animation: fadeone 10s infinite; animation-delay :1.5s;}
+.prod:nth-child(5) {animation: fadeone 10s infinite; animation-delay :2s;}
+
+
+ @keyframes showset1 {
+    0%, 45% { opacity: 1; z-index: 2;}
+    50%, 100% { opacity: 0 z-index: 1;}
+ }
+ 
+ @keyframes showset2 {
+     0%, 45% {opacity: 1; z-index:1;}
+     50%, 95% {opacity: 1; z-index: 2;}
+     100% {opacity:0;}
+ }
+
+ @keyframes fadeone{
+    0% 10% {opacity: 1; transform: translateY(0);}
+    20% 100% {opacity:0; transform:trsnslatey(20px);}
+ }
+
+
 .first-side img{
-    width: 75px;
+    width: 55px;
     height: 20px;
-    /* padding: 15px 30px; */
-    /* background-color:red; */
+}
+
+.second-side img{
+    width: 55px;
+    height: 20px;
 }
 
 .first-side{
@@ -359,12 +450,10 @@ header{
     width: 90%;
     margin: auto;
     max-width: 1200px;
-    /* display: none; */
     overflow: hidden;
 }
 
 .prod{
-    /*border: 2px solid black; */
     padding: 30px 60px;
     border-radius: 25px;
     background-color:#FFFFFF;
@@ -382,10 +471,6 @@ header{
 .mve-top h2{
     font-size: 3.2em;
     font-weight: 400;
-
-    /* max-width: 842px;
-    max-height: 140px;
-    text-align: center; */
 }
 
 @media(max-width:1245px){
@@ -583,6 +668,7 @@ header{
 
 }
 
+
 /* =====================Custom-IQ==================== */
 .custom-iq{
     margin-bottom: 50px;
@@ -778,17 +864,75 @@ header{
 
 
 .upper-marrq{
-    border: 1px solid black;
-    padding: 27px 90px;
-    background-color: #c5b8d3;
+    /* border: 2px solid black; */
+    width: auto; height: 75px;
+    background-color: #ede9f1;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px;
+  
 }
 
 .marrq-down{
-     border: 1px solid black;
-    padding: 32px 90px;
-    background-color:#c5b8d3;
-    border-radius: 20px;}
+     /* border: 1px solid black; */
+      width: auto; height: 75px;
+    background-color: #FAF9FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+}
+ 
+.upper-marrq:hover{ 
+    border-radius: 0px;
+}
+
+
+.maq-one:hover{
+    background-color: #006BFF;
+}
+
+.maq-two:hover{
+    background-color: #006BFF;
+}
+
+.maq-three:hover{
+    background-color:black;
+}
+.maq-four:hover{
+    background-color:#EF6451;
+}
+
+.maq-five:hover{
+    background-color:#4A154B;
+}
+
+.maq-six:hover{
+    background-color:#635BFF;
+}
+
+.maq-seven:hover{
+    background-color:#146EF5;
+}
+
+.maq-eight:hover{
+    background-color:#FF4F00;
+}
+
+.maq-nine:hover{
+    background-color:#004CFF;
+}
+
+
+
+
+
+.upper-marrq img{
+    width: 80px;
+}
 
 
 .btn{
@@ -974,6 +1118,8 @@ footer{
 .foot-wrapper{
     /* background-color: darkblue; */
     width: 100%;
+    max-width: 1440px;
+    margin: auto;
     /* border: 2px solid gold; */
     display: flex;
     /* gap: 20px; */
@@ -989,7 +1135,7 @@ footer{
 @media(max-width:767px){
     .foot-wrapper{
         flex-direction: column;
-        gap: .6em;
+        gap: 1.2em;
     }
     .footr-down{
     flex-direction: column;
@@ -1033,6 +1179,7 @@ footer{
 .footr h5{
     font-size: 20px;
     color: white;
+    margin-bottom: 15px;
 }
 
 .footr-down{
