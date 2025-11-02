@@ -19,7 +19,7 @@ header{
 }
 
 .tp-nv{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,9 +77,6 @@ header{
         color: black;
     }
     
-    .menu{
-
-    }
 
     .menu-drop{
         position: relative;
@@ -104,7 +101,7 @@ header{
 
 .drop-child{
     border-right: 2px solid #464242;
-    padding: 30px 50px 0px 35px;
+    /* padding: 30px 50px 0px 35px; */
 }
 .drp-three{
     border: none;
@@ -115,14 +112,14 @@ header{
     font-size:1.2em ;
     font-weight:600 ;
     /* line-height: 26px; */
-    padding-right: 4em;
+    /* padding-right: 4em; */
 
 }
 
 .drop-child p{
     font-size: .7em;
     font-weight: 200;
-    width: 16em;
+    /* width: 16em; */
     margin-bottom: 2em;
 
 }
@@ -168,9 +165,10 @@ header{
        }
         .tp-nv2{
         display: flex;
-        width: 80%;
+        width: 90%;
         justify-content: space-between;
         align-items: center;
+        margin: auto;
        
        }
 
@@ -198,7 +196,8 @@ header{
    body{
     padding-top: 80px;
     background-color: #FAF9FB;
-    outline: 5px solid red;
+   
+
    }
    #hero{
     background-color: #2A222B;
@@ -212,7 +211,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 2em;
-    
+    overflow: hidden;
    }
    
    
@@ -330,6 +329,14 @@ header{
     .hero-p2{
         font-size:1.1em ;
     }
+
+    .hero-top-inner{
+    width: 90%;
+    margin:  auto;
+}
+    .hero-top-inner a{
+        width: 100%;
+    }
 }
     /* ================products======================= */
 .move{
@@ -349,13 +356,19 @@ header{
     gap: 1em;
     padding: 35px 0px;
     background-color:#FAF9FB;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    /* display: none; */
+    overflow: hidden;
 }
 
 .prod{
-    /* border: 2px solid black; */
-    padding: 30px 65px;
+    /*border: 2px solid black; */
+    padding: 30px 60px;
     border-radius: 25px;
     background-color:#FFFFFF;
+    overflow: hidden;
 }
 
 
@@ -382,12 +395,25 @@ header{
     }
 }
 
+@media(max-width:592px){
+    .mve-top h2{
+        width: 80%;
+        font-size: 2.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+
+    }
+}
+
 
 
 /* =========================Customer-section======================= */
 
 .customer-sect{
-    margin-bottom: 70px;
+    margin-bottom:70px;
 }
 
 .topp{
@@ -479,7 +505,7 @@ header{
     font-size: 1.5em;
     margin-bottom: 35px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.8em;
 }
 
 
@@ -493,6 +519,8 @@ header{
 #cust-sect{
     margin-bottom: 40px;
 }
+
+
 
 @media(max-width:991px){
     .downn{
@@ -518,6 +546,42 @@ header{
     }
 }
 
+@media(max-width:550px){
+     .topp h2{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 2em;
+        line-height: 1.2em;
+        margin-bottom: 1.2em;
+ }
+.downn-left{
+    width: 100%;
+    padding: 0;
+}
+ .downn-left h3{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size:2em ;
+    padding: 25px 0px;
+ }
+
+ .typ-frm, .typ-frm2{
+     width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size:1.2em ;
+    padding: 10px 0px;
+ }
+
+ .downn-left button{
+    width: 95%;
+    margin: auto;
+    
+ }
+
+}
 
 /* =====================Custom-IQ==================== */
 .custom-iq{
@@ -617,18 +681,53 @@ header{
     }
 }
 
+
+
+@media(max-width:550px){
+    
+.cus-right{
+    width: 100%;
+    padding: 0;
+}
+ .cuss-right h3{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size:2em ;
+    padding: 25px 0px;
+    line-height: 15px;
+ }
+
+ .cuss-p1, .cus-p2{
+     width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size:1.1em ;
+    padding: 10px 0px;
+    line-height: 10px;
+ }
+
+ .cus-right button{
+    width: 95%;
+    margin: auto;
+    
+ }
+
+}
+
 /* ====================marrq-section==================== */
 .marqu-sect{
    margin-top: 50px;
    margin-bottom: 70px;
 }
-.wrapper{
+.marq-wrapper{
     width: 94%;
     height: auto;
     background-color: #FFFFFF;
     border-radius: 70px;
     margin: auto;
     padding: 70px 0px;
+    overflow: hidden;
 }
 
 .marrq-top{
@@ -707,6 +806,24 @@ header{
 }
 .btn button:hover{
     border-radius: 20px;
+}
+
+
+@media(max-width:550px) {
+    .marrq-top h3{
+    font-size: 2em;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.btn button{
+    width: 90%;
+    margin: auto;
+}
+    
 }
 /* ===================why-section===================== */
 .why-sect-typfrm{
@@ -800,6 +917,53 @@ header{
     display: flex;
     justify-content: center;
 }
+
+
+@media(max-width:767px){
+    .why-top h2{
+    font-size: 2em;
+    max-width: 452px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 25px;
+    }
+    .why-top p{
+    font-size: 1em;
+    max-width: 447;
+}
+    .why-center{
+        flex-direction: column;
+    }
+
+.why-typ{
+    width: 95%;
+    margin: auto;
+    height: auto;
+}
+
+.why-percentt{
+    margin-bottom: 25px;
+    width: 90%;
+    max-width: 450px;
+}
+
+.why-percentt p{
+    font-size: 1.3em;
+    line-height: 16px;
+    font-weight: 400;
+    width: 95%;
+    max-width:450px ;
+    /* padding: 0px 25px; */
+    text-align: center;
+    margin: auto;
+}
+
+.why-btn button{
+    width: 95%;
+    margin: auto;
+}
+
+}
 /* ====================footer====================== */
 
 footer{
@@ -816,6 +980,23 @@ footer{
     justify-content: space-between;
     padding: 0px 30px 50px 30px;
 
+}
+
+.foot-wrapper li .fa-solid{
+    color: white;
+}
+
+@media(max-width:767px){
+    .foot-wrapper{
+        flex-direction: column;
+        gap: .6em;
+    }
+    .footr-down{
+    flex-direction: column;
+    color: white;
+     padding: 0px;
+     
+}
 }
 
 .prod-roww{
