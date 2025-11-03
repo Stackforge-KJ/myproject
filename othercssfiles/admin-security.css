@@ -195,6 +195,28 @@ header{
         color: #9454AB;
     }
 
+    @media(max-width:991px){
+    .team-wrapper{
+        flex-direction: column;
+    }
+
+     .inner1{
+        width: 80%;
+
+    } 
+
+     .inner2{
+        width: 90%;
+
+    } 
+
+   
+}
+
+
+
+
+
     /* ==================tools=================== */
     .control{
         margin: 70px 0px;
@@ -310,8 +332,55 @@ header{
 
 
 
-@media (max-width:991px){
+@media (max-width:1152px){
+    .verify-inner-two{
+    height: auto;
+    width: 40%;
+    max-width: 500px;
+    max-height: 400px;
+    margin: auto;
+    
+}
 
+.verify-inner-two h3{
+    font-size: 2em;
+    font-weight: 300;
+    line-height:30px;
+    margin: 10px 0px;
+
+}}
+
+ @media(max-width:991px){
+    .verify-wrapper{
+        flex-direction: column;
+        gap: 1em;
+
+    }
+
+    .verify-inner-one{
+        width: 95%;
+        margin: auto;
+        padding: 20px 0px;
+        height: auto;
+
+    } 
+
+    .verify-inner-one img{
+        width: 95%;
+        margin: auto;
+    }
+
+     .verify-inner-two{
+        width: 95%;
+        margin: auto;
+        height: auto;
+
+    } 
+    .veri-p2{
+        width: 100%;
+        margin: 30px;
+
+    }
 }
 
 
@@ -387,7 +456,59 @@ header{
     font-weight: 400;
     line-height: 24px;
 }
+@media (max-width:1152px){
+    .protect-inner1{
+    height: auto;
+    width: 40%;
+    max-width: 500px;
+    max-height: 400px;
+    /* background-color: aqua; */
+    margin: auto;
+    
+}
 
+.protect-inner1 h3{
+    font-size: 2em;
+    font-weight: 300;
+    line-height:30px;
+    margin: 10px 0px;
+
+}
+}
+
+
+
+ @media(max-width:991px){
+    .protect-wrapp{
+        flex-direction: column-reverse;
+
+    }
+
+    .protect-inner1{
+        width: 90%;
+        margin: auto;
+        padding: 40px 0px;
+        height: auto;
+
+    } 
+
+     .protect-inner2{
+        width: 95%;
+        margin: auto;
+        padding: 30px 0px;
+    } 
+
+    .protect-inner2 img{
+        width: 100%;
+    }
+    .pro-in-p2{
+        width: 100%;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        padding: 0px;
+        max-height: 250px;
+    }
+}
 /* ==================Global-security============================ */
 
 
@@ -468,9 +589,27 @@ header{
 
 
 
-/* @media (max-width:991px){
+@media (max-width:1152px){
+    .glob-inner2{
+    height: auto;
+    width: 40%;
+    max-width: 500px;
+    max-height: 400px;
+    /* background-color: aqua; */
+    margin: auto;
+    
+}
 
-} */
+.glob-inner2 h3{
+    font-size: 2em;
+    font-weight: 300;
+    line-height:30px;
+    margin: 10px 0px;
+
+}
+}
+
+
 
 
 /* =====================AI-security====================== */
@@ -554,6 +693,26 @@ header{
         font-size: 1em;
         line-height: 21px;
     }
+@media (max-width:1152px){
+    .secure-inner1{
+    height: auto;
+    width: 40%;
+    max-width: 500px;
+    max-height: 400px;
+    /* background-color: aqua; */
+    margin: auto;
+    
+}
+
+.secure-inner1 h3{
+    font-size: 2em;
+    font-weight: 300;
+    line-height:30px;
+    margin: 10px 0px;
+
+}
+}
+
 
 /* ===================================== */
 .explore{
@@ -578,21 +737,19 @@ header{
 
 /* ===============MARQ=================== */
 
-.marqu-sect{
-   margin-top: 30px;
-   margin-bottom: 50px;
+    .marqu-sect{
+   margin-top: 50px;
+   margin-bottom: 70px;
 }
-.wrapper{
-    width:90%;
+.marq-wrapper{
+    width: 94%;
     height: auto;
     background-color: #FFFFFF;
-    border-radius: 100px;
+    border-radius: 70px;
     margin: auto;
     padding: 70px 0px;
-    border-radius: 50px;
-    /* border: 2px solid black; */
+    overflow: hidden;
 }
-
 
 .marrq-top{
     display: flex;
@@ -601,26 +758,26 @@ header{
     margin: auto;
     flex-direction: column;
     max-width: 832px;
-    padding: 0px 60px;
-
 
 }
 
 .marrq-top p{
-    font-size:14px ;
+    font-size: .8em;
+    font-weight: 400;
+    line-height: 17px;
     color: #9454AB;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    
 }
 
 .marrq-top h3{
-    font-size: 48px;
+    font-size: 3.6em;
     line-height: 52px;
-    max-height: 106px;
-    max-width: 832px;
-    text-align: center;
-    /* margin: auto; */
+    max-height: 158px;
+    max-width: 750px;
     font-weight: 400;
-
+    text-align: center;
+    padding: 0px 50px;
 
 }
 
@@ -628,29 +785,78 @@ header{
 .marrq-one{
     display: flex;
     justify-content: space-evenly;
-   margin-top: 60px;
-   margin-bottom: 15px;
+    margin-top: 40px;
+    gap: .5em;
+
 }
 
 .marrq-two{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    gap: .5em;
 }
 
 
 .upper-marrq{
-    border: 2px solid white;
+    /* border: 2px solid black; */
+    width: auto; height: 75px;
+    background-color: #ede9f1;
     border-radius: 20px;
-    padding: 15px 80px;
-    background-color:royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px;
+  
 }
 
-.marrq-down{
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 15px 80px;
-    background-color:royalblue;
+ 
+.upper-marrq:hover{ 
+    border-radius: 0px;
+}
+
+
+.maq-one:hover{
+    background-color: #006BFF;
+}
+
+.maq-two:hover{
+    background-color: #006BFF;
+}
+
+.maq-three:hover{
+    background-color:black;
+}
+.maq-four:hover{
+    background-color:#EF6451;
+}
+
+.maq-five:hover{
+    background-color:#4A154B;
+}
+
+.maq-six:hover{
+    background-color:#635BFF;
+}
+
+.maq-seven:hover{
+    background-color:#146EF5;
+}
+
+.maq-eight:hover{
+    background-color:#FF4F00;
+}
+
+.maq-nine:hover{
+    background-color:#004CFF;
+}
+
+
+
+
+
+.upper-marrq img{
+    width: 80px;
 }
 
 
@@ -662,11 +868,31 @@ header{
 }
 
 .btn button{
-    padding: 20px 40px;
+    padding: 20px 30px;
     background-color: black;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 50px;
+    color: #fff;
+    border-radius: 15px;
+}
+.btn button:hover{
+    border-radius: 20px;
+}
+
+
+@media(max-width:550px) {
+    .marrq-top h3{
+    font-size: 2em;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.btn button{
+    width: 90%;
+    margin: auto;
+}
+    
 }
 
 /* ===========Ready-section=============== */
@@ -746,6 +972,17 @@ header{
     color: #bb54e0;
 }
 
+@media (max-width:1150px){
+   .ready-text h2{
+    font-size: 2em;
+    line-height: 30px;
+    font-weight: 400;
+    max-width: 860px;
+    max-height: 160px;
+    margin-bottom: 10px;
+   padding: 0px 0px;
+   }
+}
 
 /* =================footer================ */
 

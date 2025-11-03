@@ -16,6 +16,7 @@ header{
     width: 100%;
     padding: 10px 0px;
     top: 0;
+    z-index: 9;
 }
 
 .tp-nv{
@@ -63,7 +64,7 @@ header{
 
 
     .head-right button{
-        padding: 20px 35px;
+        padding: 15px 30px;
         border-radius: 10px;
         background-color: black;
         color: white;
@@ -86,13 +87,11 @@ header{
     position: absolute;
     /* z-index: 2; */
     display: none;
-    /* width: 900px; */
+    /* width: 100vw; */
+    height:100vh ;
     /* border: 2px solid red; */
     border: none;
     background-color: white;
-    /* border-radius: 10px; */
-        
-   
     }
 
     .menu-drop:hover .dropdown{
@@ -100,8 +99,9 @@ header{
 }
 
 .drop-child{
-    border-right: 2px solid #464242;
-    /* padding: 30px 50px 0px 35px; */
+    border-right: 1px solid #464242;
+    padding: 0px 60px;
+    margin-left: 60px;
 }
 .drp-three{
     border: none;
@@ -115,12 +115,21 @@ header{
     /* padding-right: 4em; */
 
 }
+.drop-child a{
+    width: 100%;
+}
+
+.drop-child a:hover{
+    transform: translateX(-20px);
+    
+}
 
 .drop-child p{
     font-size: .7em;
-    font-weight: 200;
-    /* width: 16em; */
-    margin-bottom: 2em;
+    font-weight: 100;
+    width: 100%;
+    margin-bottom: 1em;
+    
 
 }
 
@@ -129,7 +138,7 @@ header{
     .child-wrap {
         display: flex;
         justify-content: space-between;
-        padding: 20px 10px 0px 10px;
+        padding: 20px 50px 0px 50px;
        
     }
 
@@ -144,18 +153,6 @@ header{
     } */
 
     
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -371,30 +368,31 @@ header{
 }
 
 .wrapper-sides{
-    display: flex;
+display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
 height: 9em;
-background: #9454AB;
+/* background: #9454AB; */
 overflow: hidden;
+/* padding: 40px 0px; */
 }
 
-.mve-inner{
+/* .mve-inner{
     display: flex;
     gap: 1rem;
     position: absolute;
     opacity: 0;
-}
+} */
 
-.first-side{
+/* .first-side{
     animation: showfirstside 10s infinite;
 
-}
-.first-side{
+} */
+/* .first-side{
     animation: showfirstside 10s infinite;  
-}
-.prod{
+} */
+/* .prod{
     width: 60px;
     height: 60px;
     background-color: #fff;
@@ -404,30 +402,30 @@ overflow: hidden;
     justify-content: center;
     font-size: 1.5rem;
     border-radius: 10px;
-}
+} */
 
-.prod:nth-child(1) {animation: fadeone 10s infinite; animation-delay :0s;}
+/* .prod:nth-child(1) {animation: fadeone 10s infinite; animation-delay :0s;}
 .prod:nth-child(2) {animation: fadeone 10s infinite; animation-delay :0.5ss;}
 .prod:nth-child(3) {animation: fadeone 10s infinite; animation-delay :1s;}
 .prod:nth-child(4) {animation: fadeone 10s infinite; animation-delay :1.5s;}
-.prod:nth-child(5) {animation: fadeone 10s infinite; animation-delay :2s;}
+.prod:nth-child(5) {animation: fadeone 10s infinite; animation-delay :2s;} */
 
 
- @keyframes showset1 {
+ /* @keyframes showset1 {
     0%, 45% { opacity: 1; z-index: 2;}
     50%, 100% { opacity: 0 z-index: 1;}
- }
+ } */
  
- @keyframes showset2 {
+ /* @keyframes showset2 {
      0%, 45% {opacity: 1; z-index:1;}
      50%, 95% {opacity: 1; z-index: 2;}
      100% {opacity:0;}
- }
+ } */
 
- @keyframes fadeone{
+ /* @keyframes fadeone{
     0% 10% {opacity: 1; transform: translateY(0);}
     20% 100% {opacity:0; transform:trsnslatey(20px);}
- }
+ } */
 
 
 .first-side img{
@@ -466,12 +464,16 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding: 40px 0px;
 }
 
 .mve-top h2{
     font-size: 3.2em;
     font-weight: 400;
 }
+
+
+
 
 @media(max-width:1245px){
     .first-side{
@@ -784,13 +786,21 @@ overflow: hidden;
     line-height: 15px;
  }
 
- .cuss-p1, .cus-p2{
-     width: 95%;
+ .cuss-p1{
+     width: 98%;
+    margin: auto;
+    text-align: center;
+    font-size:1em;
+    line-height: 20px;
+ }
+
+ .cuss-p2{
+    width: 95%;
     margin: auto;
     text-align: center;
     font-size:1.1em ;
     padding: 10px 0px;
-    line-height: 10px;
+    line-height: 20px;
  }
 
  .cus-right button{
